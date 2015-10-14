@@ -26,7 +26,7 @@ describe('Array', function() {
       expect(me.doubleAge()).to.equal(84);
     });
 
-    it('will double the age', function() {
+    it('will reverse the name', function() {
       var me = new Person('daves',42);
       expect(me.nameReversal()).to.equal('sevad');
     });
