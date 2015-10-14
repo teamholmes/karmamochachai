@@ -13,6 +13,22 @@ describe('Array', function() {
   describe ('The person class', function() {
   	it('can be initiated', function() {
   		var me = new Person();
-  	})
+  		expect(me).to.be.ok;
+  	});
+
+  	it('will return a name', function() {
+  		var me = new Person('dave',21);
+  		expect(me.getName()).to.equal('dave');
+  	});
+
+    it('will double the age', function() {
+      var me = new Person('dave',42);
+      expect(me.doubleAge()).to.equal(84);
+    });
+
+    it('will double the age', function() {
+      var me = new Person('daves',42);
+      expect(me.nameReversal()).to.equal('sevad');
+    });
   })
 });
